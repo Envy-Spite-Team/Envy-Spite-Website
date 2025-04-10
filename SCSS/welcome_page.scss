@@ -1,0 +1,88 @@
+.welcome-part {
+    --welcome-height: 32rem;
+
+    width: 100%;
+    height: var(--welcome-height);
+
+    .welcome-image-container {
+        width: 100%;
+        height: var(--welcome-height);
+
+        background-image: url("../Media/credits_image.png");
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+    }
+
+    .welcome-text {
+        position: relative;
+        bottom: calc(var(--welcome-height) - 10rem);
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.division {
+
+    width: 100%;
+    height: 1rem;
+}
+
+.main-info {
+    p {
+        margin-left: 30rem;
+        margin-right: 30rem;
+
+        font-size: 1.5rem;
+
+
+    }
+}
+
+.team-info {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.3rem;
+
+        width: 25rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .team-members {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .team-member {
+            display: flex;
+            flex-direction: column;
+
+
+            .team-member-image {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .team-member-image img{
+                width: 12rem;
+                height: 12rem;
+                border-radius: 50%;
+            }
+
+        }
+    }
+}
